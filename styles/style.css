@@ -18,7 +18,9 @@
 .logo {
 }
 
-.nav-links {
+.nav__links {
+  list-style: none;
+  padding-left: 0;
   margin-top: 8px;
 }
 
@@ -32,8 +34,8 @@
 
 .header__title {
   font-size: 66px;
-  font-weight: 500;
   line-height: 76px;
+  font-weight: 500;
   margin: 150px 0 0;
 }
 
@@ -68,6 +70,7 @@
 /* Add the hover state styles for .header__link here */
 
 .header__address {
+  margin: 0;
   color: #838383;
 }
 
@@ -102,9 +105,10 @@
 }
 
 .card__content {
-  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__title {
@@ -125,14 +129,16 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  position: absolute;
-  bottom: 0;
+  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
+  /* In our case, this pushes the element down to the bottom */
+  margin-top: auto;
 }
 
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
   align-items: start;
+  justify-content: space-between;
   box-sizing: border-box;
 }
 
@@ -171,11 +177,11 @@
   margin-right: 12px;
 }
 
-.event-info__icon_calendar {
+.event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
 }
 
-.event-info__icon_pin {
+.event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
 }
 
@@ -202,6 +208,7 @@
   /* flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
+  max-width: 780px;
   position: relative; */
 }
 
@@ -286,6 +293,7 @@
 }
 
 .step__title {
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
@@ -311,9 +319,11 @@
 }
 
 .about__title {
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+  z-index: 1;
 }
 
 .about__content {
@@ -324,6 +334,7 @@
 }
 
 .about__paragraph {
+  margin: 0;
 }
 
 .about__circle {
@@ -340,10 +351,10 @@
 .footer__columns {
 }
 
-.footer__column_hours {
+.footer__column_content_hours {
 }
 
-.footer__column_social {
+.footer__column_content_social {
 }
 
 .footer__logo {
@@ -372,5 +383,5 @@
 .footer__social-icon {
 }
 
-.footer__copyrights {
+.footer__copyright {
 }
