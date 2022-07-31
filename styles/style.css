@@ -37,6 +37,7 @@
   column-gap: 20px;
   display: flex;
   justify-items: flex-end;
+  margin-bottom: auto;
 }
 
 .nav__link {
@@ -402,11 +403,14 @@
   margin-left: 120px;
   position: relative;
   z-index: 1;
-  gap: 32px;
 }
 
 .about__paragraph {
-  margin: 32px;
+  margin: 0 0 32px;
+}
+
+.about__circle:nth-of-type(3n) {
+  margin-bottom: 32px;
 }
 
 .about__circle {
