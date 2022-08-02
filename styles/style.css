@@ -409,8 +409,8 @@
   margin: 0 0 32px;
 }
 
-.about__circle:nth-of-type(3n) {
-  margin-bottom: 32px;
+.about__paragraph:nth-of-type(3n) {
+  margin-bottom: auto;
 }
 
 .about__circle {
